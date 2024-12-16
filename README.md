@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Jayesh.svg" width="500" height="100" alt="Jayesh Pandya Animated Name">
+  <img src="Jayesh.svg" width="800" height="400" alt="Jayesh Pandya Animated Name">
 </p>
 
 
@@ -7,7 +7,7 @@
 
 🚀 **Aspiring Software Engineer | System Software Enthusiast | Problem Solver**  
 
-Welcome to my GitHub profile! I'm passionate about building , working on challenging projects, and exploring the intersection of hardware and software.
+Welcome to my GitHub profile! I'm passionate about working on challenging projects and exploring the intersection of hardware and software.
 
 ---
 
