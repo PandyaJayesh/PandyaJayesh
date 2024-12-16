@@ -1,0 +1,21 @@
+<svg width="500" height="100" xmlns="http://www.w3.org/2000/svg">
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+        font-size="36" font-family="Arial" fill="blue">
+    <tspan fill="blue" class="text">Jayesh Pandya</tspan>
+  </text>
+  <style>
+    .text {
+      animation: fade 2s infinite alternate;
+    }
+    @keyframes fade {
+      0% {
+        fill: blue;
+        font-size: 36px;
+      }
+      100% {
+        fill: red;
+        font-size: 42px;
+      }
+    }
+  </style>
+</svg>
