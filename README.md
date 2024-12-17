@@ -64,12 +64,9 @@ Welcome to my GitHub profile! I'm passionate about working on challenging projec
 ---
 
 ## ⚡ **GitHub Stats**
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=PandyaJayesh&show_icons=true&theme=radical" alt="Jayesh's GitHub stats">
-</p>
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=PandyaJayesh&theme=radical" alt="Jayesh's Streak Stats">
-</p>
+![Jayesh's GitHub stats](https://github-readme-stats.vercel.app/api?username=PandyaJayesh&show_icons=true&theme=github-light)
+
+![Jayesh's Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=PandyaJayesh&theme=github-light)
 
 ---
 
