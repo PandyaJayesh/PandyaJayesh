@@ -33,8 +33,8 @@ Welcome to my GitHub profile! I'm passionate about working on challenging projec
 ### 🔹 TCP Variants in Wireless Networks
 - Compared TCP variants in wireless networks using **ns-3** for performance analysis.
 
-### 🔹 Concurrent Fault Simulation in VLSI
-- Simulated concurrent faults in VLSI testing using **Cadence EDA tools**.
+### 🔹 [Concurrent Fault Simulation in VLSI]
+- Simulated concurrent faults in VLSI testing using **C++**.
 
 ---
 
