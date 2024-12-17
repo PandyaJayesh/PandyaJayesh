@@ -1,69 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" style="font-family: 'Arial Black', sans-serif;">
-  <!-- Background -->
-  <rect width="100%" height="100%" fill="white" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+  <style>
+    @keyframes codeType {
+      0%, 100% { stroke-dashoffset: 100%; }
+      50% { stroke-dashoffset: 0; }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .code-text {
+      font-family: 'Courier New', monospace;
+      font-size: 36px;
+      fill:rgb(53, 3, 255);
+    }
+    .cursor {
+      animation: blink 0.7s infinite;
+    }
+  </style>
   
-  <!-- Subtle Grid Pattern -->
-  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e0e0e0" stroke-width="0.5"/>
-  </pattern>
-  <rect width="100%" height="100%" fill="url(#grid)" opacity="0.3"/>
+  <!-- Code-Editor Background -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
   
-  <!-- Animated Subtle Elements -->
-  <g id="animatedElements">
-    <circle cx="100" cy="50" r="10" fill="#3494E6" opacity="0.3">
-      <animate attributeName="cx" values="100;700;100" dur="20s" repeatCount="indefinite" />
-      <animate attributeName="cy" values="50;250;50" dur="20s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="700" cy="250" r="15" fill="#EC6EAD" opacity="0.3">
-      <animate attributeName="cx" values="700;100;700" dur="15s" repeatCount="indefinite" />
-      <animate attributeName="cy" values="250;50;250" dur="15s" repeatCount="indefinite" />
-    </circle>
-  </g>
-  
-  <!-- Name Animation with Enhanced Visibility -->
-  <defs>
-    <linearGradient id="nameGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#3494E6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#EC6EAD;stop-opacity:1" />
-    </linearGradient>
-    
-    <filter id="dropShadow">
-      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#888" flood-opacity="0.3"/>
-    </filter>
-  </defs>
-  
-  <!-- First Name -->
-  <text x="50%" y="120" 
-        text-anchor="middle" 
-        font-size="72" 
-        font-weight="bold" 
-        fill="url(#nameGradient)"
-        filter="url(#dropShadow)">
-    <tspan x="50%" dy="0">Jayesh</tspan>
+  <!-- Code Lines -->
+  <text x="50" y="80" class="code-text">
+    <tspan>const name = "</tspan>
+    <tspan fill="#FF5722">Jayesh</tspan>
+    <tspan>";</tspan>
   </text>
   
-  <!-- Last Name -->
-  <text x="50%" y="220" 
-        text-anchor="middle" 
-        font-size="72" 
-        font-weight="bold" 
-        fill="url(#nameGradient)"
-        filter="url(#dropShadow)">
-    <tspan x="50%" dy="0">Pandya</tspan>
+  <!-- Animated Name -->
+  <text x="50" y="150" class="code-text">
+    <tspan style="animation: codeType 2s linear infinite;">console.log(name);</tspan>
+    <tspan class="cursor">|</tspan>
   </text>
   
-  <!-- Animated Underline -->
-  <path d="M200,250 Q400,270 600,250" 
-        stroke="url(#nameGradient)" 
-        stroke-width="4" 
-        fill="none" 
-        opacity="0.7">
-    <animate attributeName="d" 
-             values="M200,250 Q400,270 600,250;
-                     M200,260 Q400,240 600,260;
-                     M200,250 Q400,270 600,250"
-             dur="4s"
-             repeatCount="indefinite"
-    />
-  </path>
+  <!-- Coding Emojis -->
+  <text x="50" y="200" style="font-size: 36px;">
+    <tspan style="animation: float 2s infinite;">💻</tspan>
+    <tspan style="animation: float 2s infinite 0.5s;">🖥️</tspan>
+    <tspan style="animation: float 2s infinite 1s;">🚀</tspan>
+  </text>
 </svg>

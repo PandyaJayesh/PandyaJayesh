@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="Jayesh.svg" width="500" height="100" alt="Jayesh Pandya Animated Name">
+  <img src="Jayesh.svg" width="700" height="100" alt="Jayesh Pandya Animated Name">
 </p>
+
 
 
 # 👋 Hi, I'm **Jayesh Pandya**  
